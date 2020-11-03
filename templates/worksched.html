@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Blank Page - Brand</title>
+    <title>Work Schedual</title>
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="../static/fonts/fontawesome-all.min.css">
@@ -18,15 +18,15 @@
             <div class="container-fluid d-flex flex-column p-0">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                     <div class="sidebar-brand-icon rotate-n-15"></div>
-                    <div class="sidebar-brand-text mx-3"><span>EPQ Times</span></div>
+                    <div class="sidebar-brand-text mx-3"><span>EPQ Time Clock</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="{{url_for('ManagerDashboard')}}"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="{{url_for('WeeklyAttendance')}}"><i class="fas fa-table"></i><span>Weekly Attendance</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url_for('register')}}"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{url_for('worksched')}}"><i class="fas fa-user-circle"></i><span>Work Schedual</span></a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link active" href="{{url_for('vacreq')}}"><i class="fas fa-window-maximize"></i><span>Vacation Request</span></a><a class="nav-link" href="{{url_for('editemp')}}"><i class="fa fa-star"></i><span>Edit Employee</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{url_for('vacreq')}}"><i class="fas fa-window-maximize"></i><span>Vacation Request</span></a><a class="nav-link" href="{{url_for('editemp')}}"><i class="fa fa-star"></i><span>Edit Employee</span></a></li>
                     <li class="nav-item"></li>
                 </ul>
             </div>
@@ -34,7 +34,7 @@
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><span class="d-none d-lg-inline mr-2 text-gray-600 small" style="font-size: 23px;">Welcome<strong> {{flname}}</strong></span>
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><span class="d-none d-lg-inline mr-2 text-gray-600 small" style="font-size: 23px;">Welcome<strong>  {{flname}}</strong></span>
                         <form
                             class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                             <div class="input-group">
@@ -54,29 +54,29 @@
                                 <li class="nav-item dropdown no-arrow mx-1">
                                     <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter"></span><i class="fas fa-bell fa-fw"></i></a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in">
-                                            <h6 class="dropdown-header">alerts center</h6>
+                                            <h6 class="dropdown-header"></h6>
                                             <a class="d-flex align-items-center dropdown-item" href="#">
                                                 <div class="mr-3">
                                                     <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
                                                 </div>
-                                                <div><span class="small text-gray-500">December 12, 2019</span>
-                                                    <p>A new monthly report is ready to download!</p>
+                                                <div><span class="small text-gray-500"></span>
+                                                    <p></p>
                                                 </div>
                                             </a>
                                             <a class="d-flex align-items-center dropdown-item" href="#">
                                                 <div class="mr-3">
                                                     <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
                                                 </div>
-                                                <div><span class="small text-gray-500">December 7, 2019</span>
-                                                    <p>$290.29 has been deposited into your account!</p>
+                                                <div><span class="small text-gray-500"></span>
+                                                    <p></p>
                                                 </div>
                                             </a>
                                             <a class="d-flex align-items-center dropdown-item" href="#">
                                                 <div class="mr-3">
                                                     <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
                                                 </div>
-                                                <div><span class="small text-gray-500">December 2, 2019</span>
-                                                    <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                                <div><span class="small text-gray-500"></span>
+                                                    <p></p>
                                                 </div>
                                             </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
                                     </div>
@@ -90,8 +90,8 @@
                                                     <div class="bg-success status-indicator"></div>
                                                 </div>
                                                 <div class="font-weight-bold">
-                                                    <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
-                                                    <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                                    <div class="text-truncate"><span></span></div>
+                                                    <p class="small text-gray-500 mb-0"></p>
                                                 </div>
                                             </a>
                                             <a class="d-flex align-items-center dropdown-item" href="#">
@@ -99,8 +99,8 @@
                                                     <div class="status-indicator"></div>
                                                 </div>
                                                 <div class="font-weight-bold">
-                                                    <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
-                                                    <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                                    <div class="text-truncate"><span></span></div>
+                                                    <p class="small text-gray-500 mb-0"></p>
                                                 </div>
                                             </a>
                                             <a class="d-flex align-items-center dropdown-item" href="#">
@@ -108,8 +108,8 @@
                                                     <div class="bg-warning status-indicator"></div>
                                                 </div>
                                                 <div class="font-weight-bold">
-                                                    <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
-                                                    <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                                    <div class="text-truncate"><span></span></div>
+                                                    <p class="small text-gray-500 mb-0"></p>
                                                 </div>
                                             </a>
                                             <a class="d-flex align-items-center dropdown-item" href="#">
@@ -117,8 +117,8 @@
                                                     <div class="bg-success status-indicator"></div>
                                                 </div>
                                                 <div class="font-weight-bold">
-                                                    <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
-                                                    <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                                    <div class="text-truncate"><span></span></div>
+                                                    <p class="small text-gray-500 mb-0"></p>
                                                 </div>
                                             </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
                                     </div>
@@ -137,50 +137,50 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-1"></h3>
+                    <h3 class="text-dark mb-4"></h3>
                     <div class="card shadow">
                         <div class="card-header py-3">
-                            <p class="text-primary m-0 font-weight-bold" style="width: 897px;">Vacation Request&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</p>
-                            <p
-                                class="text-primary m-0 font-weight-bold" style="width: 147px;text-align: right;"></p>
+                            <p class="text-primary m-0 font-weight-bold" style="width: 897px;">Employee&nbsp;Schedual&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6 text-nowrap">
-                                    <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label>Show&nbsp;<select class="form-control form-control-sm custom-select custom-select-sm"><option value="10" selected="">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>&nbsp;</label></div>
+                                    <label for="start">Report Date:</label>
+                                    
+                                    <input type="date" id="start" name="trip-start" value="2020-11-02" min="2000-01-01" max="9999-12-31">
                                 </div>
                                 <div class="col-md-6">
                                     <div class="text-md-right dataTables_filter" id="dataTable_filter"><input class="bg-light border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button><label></label></div>
                                 </div>
                             </div>
-                            <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
+                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
                                 <table class="table my-0" id="dataTable">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
                                             <th>Position</th>
-                                            <th>Start Date</th>
-                                            <th>End Date</th>
-                                            <th>Total Days</th>
-                                            <th>Total Hours</th>
-                                            <th>Conflict</th>
-                                            <th>Approve</th>
-                                            <th>Deny</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Shift</th>
+                                        
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    {% for row in table %}
+                                    {% for row in employees %}
                                         <tr>
                                             <td><strong>{{row.2}} {{row.1}}</strong></td>
                                             <td>{{row.3}}</td>
-                                            <td>{{row.4}}</td>
-                                            <td>{{row.5}}</td>
-                                            <td>{{row.7}}</td>
-                                            <td>{{row.0}}</td>
-                                            <td></td>
-                                            <td><button class="btn btn-primary" type="button" style="background: rgb(8,106,6);">A</button><br></td>
-                                            <td><button class="btn btn-primary" type="button" style="background: rgb(143,7,7);">D</button></td>
+                                            <td>{{row.9}}</td>
+                                            <td>{{row.8}}</td>
+                                            <td><div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label><select
+                                                        class="form-control form-control-sm custom-select custom-select-sm">
+                                                        <option value="1" selected="">Shift 1</option>
+                                                        <option value="2">Shift 2</option>
+                                                        <option value="3">Shift 3</option>
+                                                        <option value="4">Shift 4</option>
+                                            </select>&nbsp;</label></div></td>
+                                        
                                         </tr>
                                     {% endfor %}
                                     </tbody>
@@ -191,7 +191,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 align-self-center">
-                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 2 of 2</p>
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 5 of 5</p>
                                 </div>
                                 <div class="col-md-6">
                                     <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">

@@ -160,6 +160,16 @@ def forgot_password():
     return render_template('forgot_password.html')
 
 
+@app.route('/worksched')
+def worksched():
+    con = get_connected()
+    with con:
+        c = con.cursor()
+        c.execute("SELECT * from EMPLOYEES")
+        empsinfo = c.fetchall()
+    return render_template('worksched.html', flname=flname, employees=empsinfo)
+
+
 @app.route('/profile/')
 def profile():
     return render_template('profile.html',
