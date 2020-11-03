@@ -24,7 +24,7 @@
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="{{url_for('ManagerDashboard')}}"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="{{url_for('WeeklyAttendance')}}"><i class="fas fa-table"></i><span>Weekly Attendance</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url_for('register')}}"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
+                    
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link active" href="{{url_for('vacreq')}}"><i class="fas fa-window-maximize"></i><span>Vacation Request</span></a><a class="nav-link" href="{{url_for('editemp')}}"><i class="fa fa-star"></i><span>Edit Employee</span></a></li>
                     <li class="nav-item"></li>
@@ -140,11 +140,22 @@
                     <h3 class="text-dark mb-1"></h3>
                     <div class="card shadow">
                         <div class="card-header py-3">
-                            <p class="text-primary m-0 font-weight-bold" style="width: 897px;">Vacation Request&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</p>
+                            <p class="text-primary m-0 font-weight-bold" style="width: 897px;">Vacation Request</p>
                             <p
                                 class="text-primary m-0 font-weight-bold" style="width: 147px;text-align: right;"></p>
                         </div>
+                        {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                        {% for message in messages %}
+                        <div class="alert alert-success alert-dismissable" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        {{message}}
+                        </div>                       
+                        {% endfor %}
+                        {% endif %}
+                        {% endwith %}
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6 text-nowrap">
@@ -176,11 +187,11 @@
                                             <td>{{row.3}}</td>
                                             <td>{{row.4}}</td>
                                             <td>{{row.5}}</td>
+                                            <td>{{row.6}}</td>
                                             <td>{{row.7}}</td>
-                                            <td>{{row.0}}</td>
-                                            <td></td>
-                                            <td><button class="btn btn-primary" type="button" style="background: rgb(8,106,6);">A</button><br></td>
-                                            <td><button class="btn btn-primary" type="button" style="background: rgb(143,7,7);">D</button></td>
+                                            <td>{{row.7}}</td>
+                                            <td><a href="/vacapproved/{{row.0}}" class="btn btn-primary" type="button"  style="background: rgb(8,106,6);">A</a><br></td>
+                                            <td><a  href="/vacdenied/{{row.0}}"  class="btn btn-primary" type="button"  style="background: rgb(143,7,7);">D</a></td>
                                         </tr>
                                     {% endfor %}
                                     </tbody>
